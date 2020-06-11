@@ -1,0 +1,34 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="static/index.css">
+    <title>Pocetna stranica</title>
+</head>
+<body>
+<h1 color="red">Prijava pacijenata COVID-19</h1>
+<form action="http://localhost:8080/register" method="GET">
+    <table>
+        <tr><td>Broj zdravstvenog osiguranja</td><td><input type="text" name="osiguranje" id="osiguranje"/></td></tr>
+        <tr><td>Ime pacijenta</td><td><input type="text" name="ime" id="ime"/></td></tr>
+        <tr><td>Prezime pacijenta</td><td><input type="text" name="prezime" id="prezime"/></td></tr>
+        <tr><td>Datum rodjenja</td><td><input type="text" name="datum_rodjenja" id="datum_rodjenja"/></td></tr>
+        <tr><td>Pol</td><td>
+            <select name="pol" id="pol">
+                <option value="muski">Muski</option>
+                <option value="zenski">Zenski</option>
+            </select>
+        </td></tr>
+        <tr><td>Zdravstveni status</td><td>
+            <select name="status" id="status">
+                <option value="BEZ_SIMPTOMA">BEZ SIMPTOMA</option>
+                <option value="SA_SIMPTOMIMA">SA SIMPTOMIMA</option>
+                <option value="ZARAZEN">ZARAZEN</option>
+                <option value="IZLECEN">IZLECEN</option>
+            </select>
+        </td></tr>
+        <tr><td align="right">Http server:</td><td><input id="http" name="http" type="submit"/></td></tr>
+        <tr><td align="right">JSP i Servlet</td><td><input id="servlet" name="servlet" type="submit"/></td></tr>
+        <tr><td align="right">REST</td><td><input id="rest" name="rest" type="submit"/></td></tr>
+    </table>
+</form>
+</body>
+</html>
