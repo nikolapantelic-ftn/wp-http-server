@@ -126,7 +126,7 @@ public class Server {
 			ps.print("<td>" + p.getOsiguranje()+"</td><td>" + p.getIme()+"</td><td>" + p.getPrezime()
 					+ "</td><td>" + p.getDatumRodjenja() + "</td><td>" + p.getPol() + "</td><td>" + p.getStatus() + "</td>");
 			if(!p.getStatus().equals("ZARAZEN")) {
-				ps.print("<td><a href=\"http://localhost:8080/update?osiguranje=" + p.getOsiguranje() + "\">Test je pozitivan!</a></td></tr>");
+				ps.print("<td><a href=\"http://localhost:8081/update?osiguranje=" + p.getOsiguranje() + "\">Test je pozitivan!</a></td></tr>");
 			} else {
 				ps.print("<td></td></tr>");
 			}
